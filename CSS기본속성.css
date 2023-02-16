@@ -1,0 +1,95 @@
+h1{
+    color: rgba(0,0,0,0.5);
+}
+body{
+    /* background-image: rgba(225,225,225,0.1), url(./img/background.jpg);/ */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(72, 156, 224, 0.5)),
+    url("./img/background.jpg"); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-deco{
+    text-decoration: underline dashed 1px black;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-line: overline;
+    text-decoration-color: blueviolet;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    color: black;
+}
+
+.text-shadow{
+    text-shadow: 1px 1px 5px yellow;
+    /* x위치 y위치 블러값 색상 */
+}
+
+.test{
+    color: blue;
+}
+
+.font-mono{
+    font-family: VIVALDI, "CookieRun Black";
+}
+
+.font-weight{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* 띄어쓰기 사용 : link 클래스 안에 있는 a태그에 접근 */
+.link a:link{
+    color: turquoise;
+}
+
+.link a:visited{
+    color: rosybrown;
+}
+
+.link a:hover{
+    color: yellowgreen;
+}
+
+.link a:active{
+    color: khaki;
+}
+
+/* 클래스이름 바로 뒤에 상태를 붙여서 사용할 수 있다 */
+/* p태그는 block 속성이라 가로 전체 공간에 hover되어도 설정한 속성이 적용됨 */
+.p_hover:hover{
+    color: tomato;
+}
+
+.list-mark{
+    /* list-style-type: circle; */
+    /* list-style-image: url(./img/KakaoTalk_Snapshot_20230216_171214.png); */
+    list-style-image: url(./img/user-solid.svg);
+    list-style-position: inside;
+}
+
+/* ,를 이용해 함께 적용해 줄 수 있다 */
+.table_col,
+.table_col td{
+    border: 1px solid black;
+}
+
+.table_col{
+    border-collapse: collapse;
+}
+
+.table_cell,
+.table_cell td{
+    border: 1px solid turquoise;
+}
+.table_cell{
+    empty-cells: hide;
+}

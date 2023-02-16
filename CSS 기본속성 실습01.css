@@ -1,0 +1,30 @@
+.title_text{
+    font-family: "CookieRun Black";
+    font-size: 30px;
+}
+
+.linkbox{
+    border: 1px solid yellowgreen;
+    width: 280px;
+    background-color: lightgoldenrodyellow;
+}
+
+.list_style{
+    list-style-type: circle;
+}
+
+.list_style a{
+    text-decoration: none;
+    color: black;
+}
+
+.list_style:hover{
+    text-shadow: 1px 1px 1px steelblue;
+    font-style: italic;
+}
+
+.list{
+    color: darkturquoise;
+    font-family: "CookieRun Black";
+    font-size: 18px;
+}
