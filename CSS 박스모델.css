@@ -1,0 +1,155 @@
+.text_size{
+    font-size: 400%;
+}
+
+.text_em{
+    font-size: 3em;
+}
+
+.text_in_em{
+    font-size: 1em;
+}
+
+.text_rem{
+    font-size: 2rem;
+}
+
+.text_in_rem{
+    font-size: 1.2rem;
+}
+
+.width{
+    border: solid coral 2px;
+    /* width: 100px;/ */
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.height_box{
+    height: 100px;
+    border: 1px solid lightgreen;
+    background-color: lightcyan;
+}
+.height{
+    margin-top: 0;
+    border: 1px solid lightblue;
+    /* max-height는 콘텐츠의 크기가 커질때, 그 높이크기를 제한 할 수 있다
+    높이 크기를 제한해도, 안에 콘텐츠는 빠져나오게 됨 */
+    max-height: 100px;
+}
+
+.my_border{
+    border : 2px solid lightskyblue;
+    background-color: lightyellow;
+    width: 300px;
+}
+
+.my_p_top{
+    padding-top: 10px;
+}
+
+.my_p_left{
+    padding-left: 10px;
+}
+
+.my_p_all{
+    padding: 10px;
+}
+
+.my_p_y{
+    padding: 10px 0;
+}
+
+.b_groove{
+    width: 300px;
+    height: 50px;
+    background-color: lightyellow;
+
+    border-top-style: groove;
+    border-top-width: 10px;
+    border-top-color: blueviolet;
+
+    border-left-style: groove;
+    border-left-width: 10px;
+}
+
+.b_ridge{
+    width: 300px;
+    height: 50px;
+    background-color: lightyellow;
+
+    border-top-style: ridge;
+    border-top-width: 10px;
+    
+    border-left-style: ridge;
+    border-left-width: 10px;
+}
+
+.b_inset{
+    width: 300px;
+    height: 50px;
+    background-color: lightyellow;
+
+    border-top-style: inset;
+    border-top-width: 10px;
+    
+    border-left-style: inset;
+    border-left-width: 10px;
+}
+
+.b_outset{
+    width: 300px;
+    height: 50px;
+    background-color: lightyellow;
+
+    border-top-style: outset;
+    border-top-width: 10px;
+    
+    border-left-style: outset;
+    border-left-width: 10px;
+}
+
+.b_none{
+    width: 300px;
+    height: 50px;
+    background-color: lightyellow;
+
+    border: 1px solid coral;
+    border-bottom-style: none;
+}
+
+.b_hidden{
+    width: 300px;
+    height: 50px;
+    background-color: lightyellow;
+
+    border: 1px solid coral;
+    border-top-color: transparent;
+}
+
+.my_m_t{
+    margin-top: 30px;
+}
+
+.my_m_l{
+    margin-left: 10px;
+}
+
+.my_m_parent{
+    margin: inherit;
+}
+
+.my_m_auto{
+    margin: 0 auto;
+}
+
+.box_parent{
+    width: 400px;
+}
+
+.box_layout{
+    height: 30px;
+    padding: 2px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
