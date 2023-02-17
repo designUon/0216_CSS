@@ -30,6 +30,46 @@
 
     <p class="opacity">투명도</p>
 
+    <br>
+
+    <h2>position</h2>
+    <div class="position_stc box">
+        정적위치 포지션
+    </div>
+    <div class="position_rel box">
+        상대위치 포지션
+    </div>
+    <p>relative 속성은 정적위치에 상대적으로 요소를 움직일 수 있다<br>
+        부모의 위치를 기준으로 상대적으로 움직인다고 이야기할 수 있다
+    </p>
+    <div class="box_parent">
+        <div class="position_rel box">
+            상대위치 포지션
+        </div>
+    </div>
+    <p>
+        realative를 사용할때 바로 사용을 하게 되면<br>
+        원래 정적위치에서 사용한 공간만 자리를 차지하고<br>
+        이동한 공간은 다른 태그가 그대로 있게 된다<br>
+        *부모로 사용할 공간을 지정하고 자식태그로 relative를 사용하여 이동한다
+    </p>
+
+    <div class="box position_fix">고정위치
+        <p>브라우저 화면상에서 고정된 위치에 나온다</p>
+    </div>
+    <p>고정위치는 정적위치를 사용하지 않는다</p>
+
+    <div class="box position_absol">
+        절대위치
+    </div>
+
+    <div class="box_parent">
+        <div class="box position_absol" style="background-color: aqua; height: 100px;">
+            절대위치
+        </div>
+        <p>부모에 구애받지않고 전체 화면에서 이동</p>
+    </div>
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

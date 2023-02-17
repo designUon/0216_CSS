@@ -23,3 +23,39 @@
     font-size: 30px;
     background-color: yellowgreen;
 }
+
+.box{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+}
+
+.position_stc{
+    position: static;
+    /* 정적위치에서는 이동할 수 있다 */
+    left: 30px;
+}
+
+.position_rel{
+    /* 상대위치를 쓰겠다 선언 */
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+.box_parent{
+    height: 230px;
+}
+
+.position_fix{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.position_absol{
+    position: absolute;
+    top: 220px;
+    left: 150px;
+}
