@@ -153,3 +153,9 @@
     border: 1px solid black;
     box-sizing: border-box;
 }
+
+.outline{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: aquamarine;
+}
