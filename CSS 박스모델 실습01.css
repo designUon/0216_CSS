@@ -1,0 +1,18 @@
+h1{
+    background-color: chocolate;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.large_box{
+    padding: 20px 20px;
+    border: dashed 5px black;
+    border-radius: 20px;
+}
+
+.small_box{
+    background-color: lightgray;
+    margin: 20px 0;
+    padding: 10px 0;
+    padding-left: 15px;
+}
