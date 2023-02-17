@@ -1,0 +1,25 @@
+.background_orange{
+    background-color: orange;
+}
+
+.inline_block{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.opacity{
+    /* 투명도 작성단위 %, 0~1 숫자 */
+    opacity: 15%;
+    font-weight: 900;
+    font-size: 30px;
+    background-color: yellowgreen;
+}
