@@ -1,0 +1,44 @@
+.box{
+    border: 2px solid crimson;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: 600;
+}
+
+a:hover{
+    color: darkblue;
+    transition: 0.5s;
+}
+
+.box>h3{
+    margin-left: 15px;
+}
+
+.color li{
+    padding: 2px;
+}
+
+.tag{
+    float: right;
+}
+.tag li{
+    float: left;
+    background-color: cornflowerblue;
+    padding: 5px 15px;
+    margin-left: 18px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.tag li:hover{
+    background-color: darkblue;
+    transition: 1s;
+}

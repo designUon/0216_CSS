@@ -1,0 +1,114 @@
+.outbox p{
+    background-color: antiquewhite;
+}
+
+.outbox>p{
+    background-color: cornflowerblue;
+}
+
+.sibling~p{
+    background-color: lightcoral;
+}
+
+/* +를 사용할때는 바로 뒤에 있는 태그만 찾을 수 있다 */
+.sibling+a{
+    background-color: mediumslateblue;
+}
+
+.sibling+p{
+    background-color: mediumslateblue;
+}
+
+.test{
+    background-color: khaki;
+}
+
+.input_focus{
+    background-color: skyblue;
+}
+
+.input_focus:focus{
+    background-color: aqua;
+}
+
+.input_focus:focus+p{
+    color: blueviolet;
+}
+
+
+.state>input:checked+span{
+    color: lightgray;
+}
+
+.state>input:disabled+span{
+    text-decoration: line-through 1px solid;
+}
+
+.menu_list>li:first-child{
+    background-color: blueviolet;
+    color: white;
+}
+
+.menu_list>li:last-child{
+    background-color: slateblue;
+    color: white;
+}
+
+.menu_list>li:nth-child(2n){
+    background-color: darkslateblue;
+    color: white;
+}
+
+
+/* 테이블 칸에 색상 넣어보기 */
+
+.table_color{
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* .table_color tr:nth-child(2n){
+    background-color: darksalmon;
+} */
+
+.table_color>tbody>tr:nth-child(2n){
+    background-color: lightsalmon;
+}
+
+.table_color tr:nth-child(2n-1):hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.table_color>tbody>tr:nth-child(2n):hover{
+    background-color: salmon;
+    cursor: pointer;
+}
+
+/*  of-type */
+
+.child_tag>p:first-child{
+    color:slateblue
+}
+
+.child_tag>h1{
+    color: coral;
+}
+
+/* p:first-of-type{
+    color: crimson;
+} */
+
+/* 클래스를 지정하고 자손으로 타입찾기 */
+.of_type p:first-of-type{
+    color: crimson;
+}
+
+/* 클래스를 지정하고 자식으로 타입찾기 */
+/* first-child와 동일한 역할 */
+.of_type>p:first-of-type{
+    background-color: lightgoldenrodyellow;
+}
