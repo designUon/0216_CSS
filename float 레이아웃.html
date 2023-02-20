@@ -41,6 +41,58 @@
     </main>
     <footer class="footer">footer 푸터입니다</footer>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>레이아웃 잡기</h2>
+    <div class="wrapbox">
+        <header class="header_border">
+            <h1>header</h1></header>
+        <nav class="nav_border"><b>Nav</b>
+            <ul>
+                <li class="menu">menu1</li>
+                <li class="menu">menu2</li>
+                <li class="menu">menu3</li>
+            </ul>
+        </nav>
+        <section class="section_border"><b>Section</b>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>overflow : auto<br>
+            height를 지정한 곳에서는 scroll이 생긴다<br>
+            height를 지정하지 않았을 경우, scroll 대신 내용만큼 자동으로 맞춰짐</p>
+        </section>
+        <footer class="footer_border"><b>Footer</b>
+            <p>clear : both;</p></footer>
+    </div>
+
+    <hr>
+
+    
+    <img class="float_left" style="width:300px" src="./img/background.jpg" alt="이미지">
+    <img class="float_right" style="width:200px" src="./img/free-icon-pencil-1665628.png" alt="이미지">
+    <a href="#">a태그 : 인라인태그라서 좌측정렬이 기본</a>
+    <p>오른쪽으로 정렬할 수 있다</p>
+    <p class="float_clear">float를 이용하여 오른쪽 왼쪽을 고정해서 사용할 수 있다</p>
+    
+    <br><hr><br>
+
+    <h1>정렬하는 방법</h1>
+    <div class="align_margin">block 타입 정렬</div>
+    <div class="align_position">position 정렬</div>
+
+    <br><hr><br>
+
+    <h1>이미지와 함께 쓰는 float</h1>
+    <div class="container">
+        <img class="float_left" src="./img/free-icon-pencil-1665628.png" alt="이미지" width="150">
+        <p>연필입니다</p>
+    </div>
+    <p>
+        float와 div 컨테이너를 사용할때,<br>
+        이미지를 함께 사용한다면 <b>overflow:auto</b>를 사용해서<br>
+        내용을 다 감쌀 수 있도록 할 수 있다
+    </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
