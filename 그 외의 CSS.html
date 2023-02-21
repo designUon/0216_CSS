@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그 외의 CSS</title>
+    <link rel="stylesheet" href="./그 외의 CSS.css">
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="">
+        <input type="button" value="">
+    </form>
+
+    <h2>@ 규칙</h2>
+    <h3>@ import를 이용한 CSS 스타일 시트 가져오기</h3>
+    <div class="outbox">
+        <p>import 해온 [선택자.css]의 스타일 시트 확인</p>
+        <p>CSS에 들고오지 않으면 html의 head에서 link를 통해 들고 올 수 있다</p>
+    </div>
+
+    <br>
+
+    <h3>@font-face</h3>
+    <div class="font">
+        <h2>폰트 적용 확인</h2>
+        <p>웹 폰트가 적용된 공간입니다</p>
+    </div>
+
+    <br>
+
+    <div class="font_weight">
+        <h2>폰트 굵기 확인</h2>
+        <p>웹 폰트 굵기가 적용된 공간입니다</p>
+    </div>
+
+    <p>웹 폰트의 굵기가 있다면 그 굵기값까지 가져와야 적용된다. <br>
+    값이 없다면 bold를 통해서 임의로 굵게 해줄 수 있다</p>
+
+    <br>
+
+    <h2>벤더프리픽스</h2>
+    <p>
+        실험적인 CSS이거나 브라우저에 호환이 되지않을떄
+    </p>
+
+    <br>
+
+    <h2>그라디언트</h2>
+    <div class="gradient"> </div>
+    <div class="gradient2"> </div>
+
+    <p>-webkit- 을 앞쪽에 넣으면 색이 시작하는 각도를 설정할 수 있다<br>
+    안넣으면 위쪽에서 아래로</p>
+
+    <div class="gradient_circle"></div>
+
+    <h2>그림자효과</h2>
+    <div class="box_shadow"></div>
+
+    <br>
+
+    <h2>background - 배경</h2>
+    <div class="background"></div>
+    <br>
+    <div class="background2"></div>
+    <br>
+    <div class="background3">WATER</div>
+
+    <p>
+        backgroun-size를 통해서 이미지 크기를 조절가능<br>
+        cover (가장 큰 사이즈에 맞춰 꽉 채워서)<br>
+        contain (잘리지않게) <br>
+        이미지 크기를 조절하지않으면 파일의 기본 크기로 출력됨<br>
+        origin : 이미지 시작위치<br>
+        clip : 이미지를 자르는 위치 (예외:text) <br>
+        이미지 주소를 여러개 넣을 경우 겹쳐서 출력
+    </p>
+
+    <br>
+
+    <h2>이미지를 이용한 테두리</h2>
+    <div class="border_img"></div>
+    <div class="border_img2"></div>
+
+    <br>
+
+    <h2>영어의 줄바꿈</h2>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsa natus eius magni, eum optio enim magnam soluta corporis culpa accusantium quos. Vitae sequi placeat, ducimus dolore pariatur consectetur iste!
+    </div>
+
+    <p>한 줄로 된 글자가 width의 크기를 넘어갔을 때<br>
+    white-space의 속성이 nowrap 이라면,<br>
+    text-overflow의 ellipsis 속성값을 통해 말줄임을 넣을 수 있다</p>
+
+    <br>
+
+    <div class="text_kr">
+        한글에도 말줄임표를 작성할 수 있습니다
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

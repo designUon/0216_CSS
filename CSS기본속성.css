@@ -2,8 +2,8 @@ h1{
     color: rgba(0,0,0,0.5);
 }
 body{
-    /* background-image: rgba(225,225,225,0.1), url(./img/background.jpg);/ */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(72, 156, 224, 0.5)),
+    /* background-image: rgba(225,225,225,0.1), url(./img/background.jpg);/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(72, 156, 224, 0.5)),
     url("./img/background.jpg"); */
     background-repeat: no-repeat;
     background-position: right;
