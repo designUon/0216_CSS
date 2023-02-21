@@ -42,3 +42,60 @@ a:hover{
     background-color: darkblue;
     transition: 1s;
 }
+
+.hashtag{
+    position: relative;
+}
+
+.hashtag_inline{
+    clear: both;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+/* .hashtag_inline>span{
+    position: relative;
+    left: 75%;
+} */
+
+.hashtag_inline>span{
+    background-color: cornflowerblue;
+    padding: 5px 15px;
+    margin-left: 12px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* 의사 클래스 활용하기 실습 */
+
+.after_n p::after{
+    content: "N";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 1px 4.5px;
+    border-radius: 50%;
+}
+
+.after_n p:hover::after{
+    /* content: "N";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 900;
+    color: white; */
+    background-color: coral;
+    /* padding: 1px 4.5px;
+    border-radius: 50%; */
+}
+
+.after_n p{
+    margin-left: 10px;
+}

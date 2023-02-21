@@ -112,3 +112,97 @@
 .of_type>p:first-of-type{
     background-color: lightgoldenrodyellow;
 }
+
+.first_letter:hover::first-letter{
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+
+.first_line:hover::first-line{
+    color:blueviolet;
+    background-color: antiquewhite;
+}
+
+.before::before{
+    /* content를 넣어서 내용 추가 */
+    /* 글자, url를 통해 이미지 추가 가능 */
+    content: url(./img/user-solid.svg);
+    /* inline-block을 넣어서 크기조절 가능 */
+    display: inline-block;
+    width: 30px;
+}
+
+.before_image::before{
+    content: '';
+    /* content로 이미지를 불러오면 크기 수정 어려움 */
+    /* 크기 수정이 가능한 background-image 추가 */
+    background-image: url(./img/bubbles-230014_960_720.jpg);
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.before_color::before{
+    content: "";
+    background-color: coral;
+    /* content에 글자가 없을때는 inline_block을 사용해서 공간을 임의로 만들어준다 */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.after:hover::after{
+    content: "";
+    background-color: aquamarine;
+    display: inline-block;
+    /* width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-left: 10px; */
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.after_color:hover::after{
+    content: '추가된 글자';
+    display: inline-block;
+    color: white;
+    width: 200px;
+    /* height: 100%; */
+    height: 30px;
+    /* background-color: rgba(250, 220, 200, 0.5); */
+    background-color: black;
+    position: absolute;
+    left: 0;
+}
+
+.attr>input[type="checkbox"]:checked+span{
+    color: lightgray;
+}
+
+.attr>input[type="radio"]:checked+span{
+    text-decoration: underline wavy;
+}
+
+.attr>input[type="button"]{
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    padding: 3px 10px;
+    line-height: 15px;
+}
+
+.attr>input[type="radio"][value="group"]{
+    /* 2개 이상의 속성이름과 속성값을 가진 태그를 찾을 수 있다 */
+}
+
+
+
+
+
