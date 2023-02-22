@@ -1,0 +1,19 @@
+.col{
+    /* min-height: 200px; */
+    column-count: 3;
+    background-color: antiquewhite;
+    column-rule: solid 1px coral;
+    column-gap: 30px;
+    column-span: all;
+    padding: 10px;
+    column-fill: balance;
+}
+
+.span_all{
+    column-span: all;
+    background-color: burlywood;
+}
+
+.figcap{
+    /* background-color: aqua; */
+}

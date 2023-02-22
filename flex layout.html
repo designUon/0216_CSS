@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 레이아웃</title>
+    <link rel="stylesheet" href="./flex layout.css">
+</head>
+<body>
+    <h1>flex 레이아웃</h1>
+    <div class="flex_box">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+        <p>아이템3</p>
+    </div>
+    <p>
+        flex를 이용하면 컨테이너 안에 있는 아이템을 쉽게 일렬로 정렬할 수 있다<br>
+        justify-content를 이용하여 간격을 지정할 수 있다<br>
+    </p>
+    <div class="flex_box_height">
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+    </div>
+    <p>
+        flex의 컨테이너에 높이가 넉넉하게 있다면<br>
+        align-items를 이용하여 위치를 이동할 수 있다
+    </p>
+    <p>
+        flex 컨테이너 안에 있는 아이템들은 inline-block 속성과 같이 사용된다<br>
+        안에 컨텐츠(글자)가 없으면 영역이 나오지 않으므로<br>
+        width를 지정해주어야한다
+    </p>
+
+    <br>
+
+    <div class="flex_box_wrap">
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+    </div>
+    <p>
+        flex-wrap 속성 중 wrap을 사용하면 공간이 부족할 때 다음 줄로 이동할 수 있다<br>
+        설정 된 justify-content가 있다면 다음 줄에서 적용된다
+    </p>
+
+    <br>
+    <div class="flex_box_height_wrap">
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+        <p>아이템</p>
+    </div>
+    <p>
+        flex 컨테이너에 높이가 있고 속성이 wrap일때,<br>
+        align-content를 통해서 위치를 정렬할 수 있다<br>
+        align-content, align-items를 사용할 때는 높이값이 필요
+    </p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
