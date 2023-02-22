@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./변형.css">n
+</head>
+<body>
+    <h1>2d Transform</h1>
+    <p>
+        요소들을 이동하거나 회전할 수 있다
+        position과 별개
+    </p>
+    <div class="my_box">
+        아무것도 적용되지않은 박스
+    </div>
+    <div class="my_box trans">
+        x,y축으로 이동합니다
+    </div>
+    <div class="my_box rotate">회전합니다</div>
+    <div class="my_box transform">여러 변형</div>
+    <div class="my_box transform_3d">
+        3차원으로 이동 및 회전
+    </div>
+
+    <br>
+
+    <h1>transition - 전환효과</h1>
+    <div class="my_box transition">transition</div>
+    <p>
+        전환을 사용할 떄는 전환이 되기 전 디자인과
+        전환이 된 후의 디자인 2가지가 필요하다<br>
+        전환이 되기 위한 조건(hover, check 등)이 맞으면
+        전환되는 모습을 보여준다. <br>
+        차후에는 JS를 이용해서도 줄 수 있다
+    </p>
+    <div class="my_box transform_transition">
+        transform transition
+    </div>
+    <p>
+        전환을 할 때, 여러 속성 이름으로 전환을 할 수 있다<br>
+        전환을 추가할 때를 통해 속성이름과 시간 추가<br>
+        수정한 모든 값을 전환으로 쓸 때에는 all을 사용하면 된다
+    </p>
+
+    <div class="my_box linear_transition">
+        linear transition
+    </div>
+
+    <br>
+
+    <h1>전환효과 연습</h1>
+    <p>아래 태그들에게 전환효과를 넣으세요</p>
+
+    <div class="checkbox">
+        <input type="checkbox">
+        <span>체크가 되면 글자색이 파랗게 전환</span>
+    </div>
+    <div class="after_transition">
+        <p>after를 이용해서 마우스를 올리면 배경색이 검정으로 바뀌고
+        다른 글자가 나오게 전환</p>
+    </div>
+    <hr>
+    <p>
+        전환효과를 주기전에 해당 태그에 전환했을 때 디자인이 들어가는 지를 확인한 후, 전환효과를 주면 빠지는 내용없이 확인하기 쉽다<br>
+        선택자 after의 경우 새로운 내용을 추가하는 선택자<br>
+        after의 값과 hover:after의 값을 주어야 전환        
+    </p>
+    
+    <br>
+
+    <h2>이미지에 마우스를 올렸을때 이미지 확대</h2>
+    <div class="content_container">
+        <div class="img"></div>
+    </div>
+    <br>
+    <h2>div태그 2개를 만들어서 위의 이미지 만들기</h2>
+    <p>2개의 div가 같은 라인에서 나오도록</p>
+    <div class="content_container">
+        <div class="img"></div>
+    </div>
+    <div class="content_container">
+        <div class="img"></div>
+    </div>
+    <!-- <div class="container_box">
+        <div class="content_container">
+            <div class="img"></div>
+        </div>
+        <div class="content_container">
+            <div class="img"></div>
+        </div>
+    </div> -->
+
+    <br><br><br><br>
+
+    <div class="content_container">
+        <div class="black">새이미지입니다</div>
+        <div class="img2"></div>
+    </div>
+
+    <br>
+
+    <h1>애니메이션</h1>
+    <p class="animation1">animation1 적용된 p태그입니다</p>
+    <p class="animation2">animation2 적용된 p태그입니다</p>
+
+    <div class="wrap">
+        <div class="animation1">애니메이션이 적용된 p태그입니다</div>
+    </div>
+
+    <br>
+
+    <h2>div모양이 바뀌는 애니메이션</h2>
+    <div class="text">
+        <p>내용확인</p>
+    </div>
+    <div class="my_box animation_box">
+        <!-- <p>빙빙돌아가는<br>회전목마처럼</p> -->
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,17 +1,5 @@
 @import url(./선택자.css);
 
-
-input[type="button"]{
-    background-image: url(./img/KakaoTalk_Snapshot_20230216_171214.png);
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-
 @font-face {
     font-family: 'TAEBAEKmilkyway';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
@@ -22,6 +10,16 @@ input[type="button"]{
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+input[type="button"]{
+    background-image: url(./img/KakaoTalk_Snapshot_20230216_171214.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 .font{
     /* font-family: 'TAEBAEKmilkyway'; */
