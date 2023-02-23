@@ -1,0 +1,143 @@
+.grid_box{
+    display: grid;
+    border: 1px solid black;
+    /* fr => frame */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 1fr 2fr; */
+    /* grid-template-columns: 1fr 2fr 4fr; */
+    grid-gap: 10px;
+}
+
+.grid_box>p{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 13px;
+    background-color: lightskyblue;
+}
+
+.grid_box>p:nth-child(2n){
+    background-color: lightpink;
+}
+
+
+/* row를 기준으로 나누는 grid */
+
+.grid_box_row{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* row를 작성할 때는 높이간격을 따로 주고싶을 때 작성 */
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.grid_box_row>p:first-child{
+    padding: 30px 0;
+}
+
+.grid_box_item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* template : 갯수만큼 크기지정(그 외의 크기는 auto)
+    auto : 모든 row의 오토를 어떻게 할지 지정 */
+    grid-auto-rows: 1fr;
+}
+
+.grid_box_item>p{
+    /* height: 60px; */
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60px;
+}
+
+.grid_box_item>p:nth-child(2n-1){
+    background-color: lightskyblue;
+}
+
+.grid_box_item>p:nth-child(2n){
+    background-color: lightpink;
+}
+
+.grid_box_item>p:nth-child(1){
+    grid-column: 1/4;
+}
+
+.grid_box_item>p:nth-child(2){
+    grid-row: 2/4;
+    border: 1px solid black;
+}
+
+.grid_box_item>p:nth-child(3){
+    grid-row: 2/4;
+    grid-column : 2/4;
+    border: 1px solid black;
+}
+
+.grid_box_item>p:nth-child(4){
+    grid-column: 2/4;
+    border: 1px solid black;
+}
+
+.grid_box_item>p:nth-child(5){
+    grid-column: 1;
+    grid-row: 4;
+    border: 1px solid black;
+}
+
+
+/* grid 레이아웃 실습 */
+.grid_box_test{
+    margin: 10px auto;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid black; */
+    grid-gap: 5px;
+}
+
+.grid_small_box{
+    /* border: 1px solid black; */
+}
+
+.grid_small_box>h4{
+    margin: 3px 0;
+    text-align: center;
+}
+
+.grid_small_box>p{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.img_box{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.img_box>img{
+    width: 100%;
+    transition: all 1s;
+
+}
+
+.img_box>img:hover{
+    scale: 1.1;
+    filter: brightness(0.5);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+/* .img_black{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 10;
+    position: absolute;
+    display: none;
+} */
+

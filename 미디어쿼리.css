@@ -1,0 +1,49 @@
+/* PC 기준으로 사용 */
+body{
+    background-color: beige;
+    font-size: 15px;
+}
+
+.grid_box_media{
+    display: grid;
+    /* width: calc(100% - 10px); */
+    /* margin: 0 auto; */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid_box_media>.content{
+    display: inline-block;
+    /* width: 300px; */
+    /* width: calc(100% - 10px); */
+    /* 콘텐츠 값이 없으므로 높이값만 지정 */
+    height: 300px;
+    margin: 10px;
+    background-color: white;
+}
+
+
+
+/* 미디어쿼리를 사용할 때, PC보다 작은 디자인에 적용 */
+/* max-width가 480px : 480px보다 작을 때 적용 */
+@media screen and (max-width:480px) {
+    body{
+        background-color: lightskyblue;
+        font-size: 13px;
+    }
+
+    .grid_box_media{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 가운데 크기를 작성해 줄 때는 min/max를 둘 다 사용 => and로 연결한다 */
+@media screen and (min-width:481px) and (max-width:767px) {
+    body{
+        background-color: lightpink;
+        font-size: 15px;
+    }
+
+    .grid_box_media{
+        grid-template-columns: 1fr 1fr;
+    }
+}
