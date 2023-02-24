@@ -64,9 +64,6 @@ h1{
     transition: all 1s;
 }
 
-.gnb_sub>li{
-
-}
 
 .content1{
     width: 100%;
@@ -99,29 +96,33 @@ h1{
 }
 
 .main_menu:hover{
-    overflow: inherit;
+    /* overflow: inherit; */
     height: 140px;
     transition: all 1s;
 }
 
 .main_menu>li:hover{
-    background-color: darkslateblue;
+    /* background-color: darkslateblue; */
     color: white;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 .sub_menu{
-    height: 90px;
+    height: 0;
     /* display: none; */
-    background-color: antiquewhite;
+    background-color: slateblue;
+}
+
+.main_menu:hover .sub_menu{
+    height: 90px;
 }
 
 .sub_menu>li{
     height: 30px;
     line-height: 30px;
     color: black;
-    background-color: slateblue;
+    /* background-color: slateblue; */
 }
 
 .sub_menu>li:hover{

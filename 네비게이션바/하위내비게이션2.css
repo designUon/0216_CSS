@@ -33,7 +33,7 @@ a{
     font-weight: 900;
 }
 
-.nav:hover+.background{
+.nav:hover>.background{
     height: 120px;
     transition: all 1s;
 }
@@ -61,7 +61,7 @@ a{
 
 
 
-.background{
+.nav>.background{
     position: absolute;
     display: inline-block;
     width: 100%;
@@ -69,6 +69,7 @@ a{
     background-color: antiquewhite;
     /* visibility: hidden; */
 }
+
 
 .content{
     width: 100%;
