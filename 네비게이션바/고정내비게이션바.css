@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    background-color: rgba(200, 230, 255, 0.8);
+}
+
+.header>.nav>ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main{
+/* 고정 내비게이션 바를 사용할때는 컨텐츠가 보여질 공간 확보를 위해 위쪽에 padding값 */
+}
+
+.main>.content1{
+    /* 브라우저 높이비율에 따라서 보이고싶을 때 사용 */
+    height: 100vh;
+    padding-top: 110px;
+    /* border: 1px solid black; */
+    background-color: antiquewhite;
+}
+
+.main>.content2{
+    /* 브라우저 높이비율에 따라서 보이고싶을 때 사용 */
+    height: 100vh;
+    background-color: lavender;
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(233, 221, 253);
+}
+
+/* float */
+
+.wrap_float{
+    width: 80%;
+    margin: 50px auto;
+    height: 900px;
+    background-color: rgb(218, 197, 255);
+    color: rgb(233, 221, 253);
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* 하나의 크기가 고정되고 나머지가 유동적일때 사용 */
+.float_left>aside{
+    background-color: rgb(68, 18, 155);
+    float: left;
+    width: calc(100% / 3);
+    height: 900px;
+    line-height: 900px;
+}
+
+.float_right{
+    float: right;
+    width: calc(calc(100% / 3)*2);
+}
+
+.float_right>header{
+    height: 300px;
+    line-height: 300px;
+    background-color: rgb(83, 42, 153);
+}
+
+.float_right>section{
+    height: 300px;
+    line-height: 300px;
+    background-color: rgb(112, 69, 185);
+}
+
+.float_right>footer{
+    height: 300px;
+    line-height: 300px;
+    background-color: rgb(146, 111, 206);
+}
+
+
+
+/* grid */
+
+.wrap_grid{
+    width: 80%;
+    margin: 50px auto;
+    height: 900px;
+    background-color: rgb(218, 197, 255);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: rgb(233, 221, 253);
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.wrap_grid>header{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(83, 42, 153);
+}
+
+.wrap_grid>aside{
+    grid-row: 1/4;
+    background-color: rgb(68, 18, 155);
+    line-height: 900px;
+}
+
+.wrap_grid>section{
+    background-color: rgb(112, 69, 185);
+}
+
+.wrap_grid>footer{
+    background-color: rgb(146, 111, 206);
+}
+
