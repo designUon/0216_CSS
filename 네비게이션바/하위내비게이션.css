@@ -1,0 +1,132 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    margin-left: 25%;
+}
+
+.nav{
+    width: 50%;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+
+.nav>.gnb{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+}
+
+.nav>.gnb .gnb_sub{
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    /* height: 0; */
+    position: absolute;
+    background-color: peachpuff;
+    padding: 10px 20px;
+    margin-left: -35px;
+}
+
+
+/* 하위 메뉴에 마우스 올렸을 때 전환효과 */
+.nav>.gnb>li>.gnb_sub>li{
+    box-sizing: border-box;
+    height: 22px;
+    margin-bottom: 5px;
+}
+
+.nav>.gnb>li>.gnb_sub>li:hover{
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+
+
+.gnb>li:hover .gnb_sub{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+    /* height: 45px; */
+    transition: all 1s;
+}
+
+.gnb_sub>li{
+
+}
+
+.content1{
+    width: 100%;
+    height: 200px;
+    background-color: azure;
+}
+
+
+/* ////////////////// nav 2 ////////////////// */
+
+.nav2{
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    background-color: cornflowerblue;
+}
+
+.main_menu{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.main_menu>li{
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.main_menu:hover{
+    overflow: inherit;
+    height: 140px;
+    transition: all 1s;
+}
+
+.main_menu>li:hover{
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.sub_menu{
+    height: 90px;
+    /* display: none; */
+    background-color: antiquewhite;
+}
+
+.sub_menu>li{
+    height: 30px;
+    line-height: 30px;
+    color: black;
+    background-color: slateblue;
+}
+
+.sub_menu>li:hover{
+    background-color: indigo;
+    color: white;
+    transition: all 0.2s;
+}
+

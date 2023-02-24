@@ -1,0 +1,77 @@
+body, ul{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    /* color: white; */
+}
+
+/* nav - gnb 정리 */
+
+.nav>.gnb{
+    display: flex;
+    background-color: cornflowerblue;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+/* li 요소가 아닌 gnb에 마우스를 올렸을 때 보이도록 */
+.nav>.gnb:hover .gnb_sub{
+    visibility: visible;
+}
+
+.nav>.gnb .gnb_sub>li:hover{
+    /* background-color: burlywood; */
+    font-weight: 900;
+}
+
+.nav:hover+.background{
+    height: 120px;
+    transition: all 1s;
+}
+
+
+/* nav - gnb의 sub 메뉴 수정 */
+
+.nav>.gnb .gnb_sub{
+    position: absolute;
+    margin-top: 10px;
+    /* width: 100%; */
+    visibility: hidden;
+    z-index: 10;
+}
+
+.nav>.gnb .gnb_sub>li{
+    /* background-color: antiquewhite; */
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: -70px;
+    font-size: 15px;
+}
+
+
+
+.background{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    background-color: antiquewhite;
+    /* visibility: hidden; */
+}
+
+.content{
+    width: 100%;
+    height: 500px;
+    background-color: azure;
+}
